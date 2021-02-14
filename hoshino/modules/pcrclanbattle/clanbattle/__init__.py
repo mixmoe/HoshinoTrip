@@ -1,10 +1,9 @@
 # 公主连接Re:Dive会战管理插件
 # clan == クラン == 戰隊（直译为氏族）（CLANNAD的CLAN（笑））
 
-from nonebot import on_command
-
 from hoshino import R, Service, util
 from hoshino.typing import *
+from nonetrip.comp import on_command
 
 from .argparse import ArgParser
 from .exception import *
@@ -63,7 +62,6 @@ def cb_cmd(name, parser:ArgParser) -> Callable:
 
 
 from .cmdv2 import *
-
 
 QUICK_START = f'''
 ======================

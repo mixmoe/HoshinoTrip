@@ -2,11 +2,12 @@ import os
 from urllib.parse import urljoin
 from urllib.request import pathname2url
 
-from nonebot import MessageSegment, get_bot
+from nonetrip.comp import MessageSegment, get_bot
 from PIL import Image
 
 import hoshino
 from hoshino import logger, util
+
 
 class ResObj:
     def __init__(self, res_path):

@@ -1,8 +1,7 @@
 import random
 
-from nonebot import on_command
-
 from hoshino import R, Service, priv, util
+from nonetrip.comp import on_command
 
 
 # basic function for debug, not included in Service('chat')

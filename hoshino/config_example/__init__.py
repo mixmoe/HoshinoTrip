@@ -1,7 +1,9 @@
 import importlib
 import os
+
 from hoshino import log
-from nonebot.default_config import *
+from nonetrip.comp.default_config import *
+
 from .__bot__ import *
 
 # check correctness

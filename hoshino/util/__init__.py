@@ -6,15 +6,14 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 from io import BytesIO
 
+import hoshino
 import pytz
 import zhconv
-from aiocqhttp.exceptions import ActionFailed
-from aiocqhttp.message import escape
-from matplotlib import pyplot as plt
-from PIL import Image
-
-import hoshino
 from hoshino.typing import CQEvent, Message, Union
+from matplotlib import pyplot as plt
+from nonebot.adapters.cqhttp.utils import escape
+from nonebot.exception import ActionFailed
+from PIL import Image
 
 try:
     import ujson as json

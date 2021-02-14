@@ -9,24 +9,26 @@ PCR会战管理命令 v2
 - 耐草：参数不规范时尽量执行
 """
 
-import os
 import asyncio
+import os
 from datetime import datetime, timedelta
 from typing import List
+
 from matplotlib import pyplot as plt
+
 try:
     import ujson as json
 except:
     import json
 
-from aiocqhttp.exceptions import ActionFailed
-from nonebot import NoneBot
-from nonebot import MessageSegment as ms
-from nonebot.typing import Context_T
-from hoshino import util, priv
+from hoshino import priv, util
+from nonebot.exception import ActionFailed
+from nonetrip.comp import MessageSegment as ms
+from nonetrip.comp import NoneBot
+from nonetrip.comp.typing import Context_T
 
-from . import sv, cb_cmd
-from .argparse import ArgParser, ArgHolder, ParseResult
+from . import cb_cmd, sv
+from .argparse import ArgHolder, ArgParser, ParseResult
 from .argparse.argtype import *
 from .battlemaster import BattleMaster
 from .exception import *

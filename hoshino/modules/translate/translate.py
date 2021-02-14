@@ -1,8 +1,8 @@
-from nonebot import on_command, CommandSession
-from nonebot import permission as perm
-
-from sogou_tr import sogou_tr
 from datetime import datetime, timedelta
+
+from nonetrip.comp import CommandSession, on_command
+from nonetrip.comp import permission as perm
+from sogou_tr import sogou_tr
 
 # sogou_tr使用帮助：
 # print(sogou_tr('hello world'))  # -> '你好世界'

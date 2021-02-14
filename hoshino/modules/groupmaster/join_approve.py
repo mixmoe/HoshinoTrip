@@ -1,5 +1,6 @@
-from nonebot import on_request, RequestSession
 import hoshino
+from nonetrip.comp import RequestSession, on_request
+
 
 @on_request('group.add')
 async def join_approve(session: RequestSession):

@@ -1,8 +1,14 @@
+import nonebot
+from nonebot.adapters.cqhttp import Bot
+
+nonebot.init(debug=True)
+
+nonebot.get_driver().register_adapter('cqhttp',Bot)
+
+nonebot.load_plugin('nonetrip')
+
 import hoshino
-import asyncio
 
-bot = hoshino.init()
-app = bot.asgi
+hoshino.init()
+nonebot.run(port=2333)
 
-if __name__ == '__main__':
-    bot.run(use_reloader=False, loop=asyncio.get_event_loop())

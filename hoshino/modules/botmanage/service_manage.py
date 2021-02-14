@@ -1,10 +1,9 @@
 from functools import cmp_to_key
 
-from nonebot import CommandSession, on_command
-from nonebot import permission as perm
-from nonebot.argparse import ArgumentParser
-
 from hoshino import Service, priv, util
+from nonetrip.comp import CommandSession, on_command
+from nonetrip.comp import permission as perm
+from nonetrip.comp.argparse import ArgumentParser
 
 PRIV_TIP = f'群主={priv.OWNER} 群管={priv.ADMIN} 群员={priv.NORMAL} bot维护组={priv.SUPERUSER}'
 

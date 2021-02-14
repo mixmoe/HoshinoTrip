@@ -1,4 +1,5 @@
-from nonebot import on_notice, NoticeSession
+from nonetrip.comp import NoticeSession, on_notice
+
 
 @on_notice('group_decrease.kick_me')
 async def kick_me_alert(session: NoticeSession):

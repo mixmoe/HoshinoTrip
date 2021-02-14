@@ -5,12 +5,12 @@ import re
 from collections import defaultdict
 from functools import wraps
 
-import nonebot
 import pytz
-from nonebot.command import SwitchException, _FinishException, _PauseException
+from nonetrip.comp.command import (SwitchException, _FinishException,
+                                   _PauseException)
 
 import hoshino
-from hoshino import log, priv, trigger
+from hoshino import log, nonebot, priv, trigger
 from hoshino.typing import *
 
 try:

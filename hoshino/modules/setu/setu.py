@@ -1,10 +1,9 @@
 import os
 import random
 
-from nonebot.exceptions import CQHttpError
-
 from hoshino import R, Service, priv
-from hoshino.util import FreqLimiter, DailyNumberLimiter
+from hoshino.util import DailyNumberLimiter, FreqLimiter
+from nonetrip.exceptions import NoneTripCompException as CQHttpError
 
 _max = 5
 EXCEED_NOTICE = f'您今天已经冲过{_max}次了，请明早5点后再来！'

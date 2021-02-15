@@ -1,5 +1,5 @@
 import hoshino
-from nonetrip.comp import RequestSession, on_request
+from nonetrip import RequestSession, on_request
 
 
 @on_request('group.add')

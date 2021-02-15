@@ -6,7 +6,7 @@ from collections import defaultdict
 from functools import wraps
 
 import pytz
-from nonetrip.comp.command import (SwitchException, _FinishException,
+from nonetrip.command import (SwitchException, _FinishException,
                                    _PauseException)
 
 import hoshino

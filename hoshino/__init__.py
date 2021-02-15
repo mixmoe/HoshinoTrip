@@ -1,9 +1,9 @@
 import os
 
-import nonetrip.comp as nonebot
-import nonetrip.poly as aiocqhttp
-from nonetrip.comp import Message, MessageSegment, message_preprocessor
-from nonetrip.comp.message import CanceledException
+import nonetrip as nonebot
+import nonetrip.compat as aiocqhttp
+from nonetrip import Message, MessageSegment, message_preprocessor
+from nonetrip.message import CanceledException
 
 from . import config
 from .log import new_logger
@@ -19,7 +19,8 @@ logger = new_logger('hoshino', config.DEBUG)
 
 def init() -> HoshinoBot:
     global _bot
-    _bot = nonebot.init(config)
+    nonebot.init(config)
+    _bot = nonebot.get_bot()
     _bot.finish = _finish
 
     from .log import critical_handler, error_handler

@@ -23,9 +23,9 @@ except:
 
 from hoshino import priv, util
 from nonebot.exception import ActionFailed
-from nonetrip.comp import MessageSegment as ms
-from nonetrip.comp import NoneBot
-from nonetrip.comp.typing import Context_T
+from nonetrip import MessageSegment as ms
+from nonetrip import NoneBot
+from nonetrip.typing import Context_T
 
 from . import cb_cmd, sv
 from .argparse import ArgHolder, ArgParser, ParseResult

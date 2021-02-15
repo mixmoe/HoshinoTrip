@@ -1,6 +1,6 @@
 from hoshino import Service, sucmd
 from hoshino.typing import CommandSession
-from nonetrip.comp.argparse import ArgumentParser
+from nonetrip.argparse import ArgumentParser
 
 
 async def ls_group(session: CommandSession):

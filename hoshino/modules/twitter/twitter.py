@@ -9,7 +9,7 @@ import pytz
 from hoshino import Service, priv, util
 from hoshino.config import twitter as cfg
 from hoshino.typing import CQEvent
-from nonetrip.comp import MessageSegment as ms
+from nonetrip import MessageSegment as ms
 from TwitterAPI import TwitterAPI, TwitterResponse
 
 api = TwitterAPI(cfg.consumer_key, cfg.consumer_secret, cfg.access_token_key, cfg.access_token_secret)

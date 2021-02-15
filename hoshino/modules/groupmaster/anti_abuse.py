@@ -6,9 +6,9 @@ from datetime import timedelta
 
 import hoshino
 from hoshino import R, Service, nonebot, util
-from nonetrip.comp import (Message, MessageSegment, message_preprocessor,
+from nonetrip import (Message, MessageSegment, message_preprocessor,
                            on_command)
-from nonetrip.comp.message import _check_calling_me_nickname
+from nonetrip.message import _check_calling_me_nickname
 
 '''
 from nonebot.command import CommandManager

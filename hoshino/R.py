@@ -2,7 +2,7 @@ import os
 from urllib.parse import urljoin
 from urllib.request import pathname2url
 
-from nonetrip.comp import MessageSegment, get_bot
+from nonetrip import MessageSegment, get_bot
 from PIL import Image
 
 import hoshino

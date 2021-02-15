@@ -11,8 +11,8 @@ import pytz
 import zhconv
 from hoshino.typing import CQEvent, Message, Union
 from matplotlib import pyplot as plt
-from nonebot.adapters.cqhttp.utils import escape
-from nonebot.exception import ActionFailed
+from nonetrip.compat import escape
+from nonetrip.compat import ActionFailed
 from PIL import Image
 
 try:

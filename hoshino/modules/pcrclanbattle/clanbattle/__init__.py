@@ -3,7 +3,7 @@
 
 from hoshino import R, Service, util
 from hoshino.typing import *
-from nonetrip.comp import on_command
+from nonetrip import on_command
 
 from .argparse import ArgParser
 from .exception import *

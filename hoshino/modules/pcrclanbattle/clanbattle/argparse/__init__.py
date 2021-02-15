@@ -1,7 +1,7 @@
 from typing import Dict, List
 
 from hoshino.util import escape
-from nonetrip.comp import Message
+from nonetrip import Message
 
 from ..exception import *
 

@@ -2,7 +2,7 @@ import importlib
 import os
 
 from hoshino import log
-from nonetrip.comp.default_config import *
+from nonetrip.default_config import *
 
 from .__bot__ import *
 

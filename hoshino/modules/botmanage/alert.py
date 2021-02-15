@@ -1,4 +1,4 @@
-from nonetrip.comp import NoticeSession, on_notice
+from nonetrip import NoticeSession, on_notice
 
 
 @on_notice('group_decrease.kick_me')

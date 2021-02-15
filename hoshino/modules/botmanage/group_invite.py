@@ -1,5 +1,5 @@
 from hoshino import nonebot, util
-from nonetrip.comp import RequestSession, on_request
+from nonetrip import RequestSession, on_request
 
 
 @on_request('group.invite')

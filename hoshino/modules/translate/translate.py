@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
-from nonetrip.comp import CommandSession, on_command
-from nonetrip.comp import permission as perm
+from nonetrip import CommandSession, on_command
+from nonetrip import permission as perm
 from sogou_tr import sogou_tr
 
 # sogou_tr使用帮助：

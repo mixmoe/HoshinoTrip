@@ -1,4 +1,4 @@
-nonetrip~=0.2.0
+nonetrip>=0.3.0
 lxml>=4.4.1
 pytz>=2019.3
 requests>=2.22.0
